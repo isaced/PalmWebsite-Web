@@ -1,0 +1,560 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Quicksand';
+}
+a {
+  color: #1d8cc2;
+}
+a:hover {
+  color: #135c7f;
+}
+.baseColor {
+  color: #1d8cc2;
+}
+.baseBG {
+  background: #1d8cc2;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 3px;
+  border: 0;
+  border-top: 0px;
+  margin: 24px 0 35px 0;
+  background: url('./img/hr.png') repeat-x;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header#header {
+  background: #fff;
+  *zoom: 1;
+  padding: 25px 0 0px 0;
+  border-bottom: 4px solid #eee;
+}
+header#header:before,
+header#header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+header#header:after {
+  clear: both;
+}
+header#header nav {
+  float: right;
+  margin-top: 16px;
+}
+header#header nav select {
+  display: none;
+}
+header#header nav ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+header#header nav ul li a {
+  float: left;
+  padding: 6px 10px 30px 10px;
+}
+header#header nav ul li a.selected {
+  color: #135c7f;
+}
+header#header nav ul li.current-menu-item > a,
+header#header nav ul li.current-menu-parent > a {
+  color: #52575f;
+}
+
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+section.header {
+  padding: 10px 0;
+  background: #1d8cc2;
+  border-bottom: 1px solid #eee;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+section.header h1,
+section.header h2,
+section.header h3,
+section.header h4,
+section.header h5,
+section.header h6 {
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+section.header p.excerpt {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+section.content {
+  padding: 40px 0 20px 0;
+}
+section.content h1,
+section.content h2,
+section.content h3,
+section.content h4,
+section.content h5,
+section.content h6 {
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+section.content [class*="span"] {
+  margin-bottom: 20px;
+}
+section.content [class*="span"] [class*="span"] {
+  margin-bottom: 0px;
+}
+section.features {
+  background: #1d8cc2;
+  padding: 40px 0;
+}
+section.features #wp-calendar td,
+section.features #wp-calendar th,
+section.features #wp-calendar caption {
+  color: #fff;
+}
+
+html.no-touch .portfolio_item a:hover img {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+html.no-touch .portfolio_item a:hover i {
+  display: block;
+}
+section.call-to-action {
+  padding: 40px 0;
+  background: #1b262b;
+}
+section.call-to-action.light {
+  background: #b9bdbf;
+}
+section.blog {
+  background: #f5f5f5;
+}
+section.map {
+  border-bottom: 4px solid #eee;
+  margin-bottom: 15px;
+}
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+.widget ul {
+  list-style: none;
+  margin-left: 0px;
+}
+.widget.feature {
+  position: relative;
+  text-align: center;
+}
+.widget.feature .icon-feature {
+  display: block;
+  width: 80px;
+  height: 80px;
+  line-height: 83px;
+  font-size: 40px;
+  margin: 0px auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #0c5f87;
+  color: #fff;
+}
+.widget.feature h3 {
+  font-weight: 300;
+  color: #fff;
+}
+.widget.feature p {
+  color: #b7e0f4;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.widget.feature p a {
+  color: inherit;
+  border-bottom: 1px dotted #b7e0f4;
+}
+.widget.feature p a:hover {
+  text-decoration: none;
+}
+.widget.feature a.action {
+  color: #b7e0f4;
+  background: #1083ba;
+  font-size: 13px;
+  padding: 4px 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  width: auto;
+  border-bottom: 0px;
+}
+.widget.feature a.action:hover {
+  color: #fff;
+  background: #0e6f9e;
+}
+.widget.widget-icon-box p,
+.widget.icon p {
+  margin-left: 45px;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  font-weight: normal !important;
+}
+.widget.widget-icon-box h4,
+.widget.icon h4 {
+  position: relative;
+  padding-left: 45px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.widget.widget-icon-box h4 i,
+.widget.icon h4 i {
+  position: absolute;
+}
+.widget.widget-icon-box i {
+  color: #fff;
+  left: 0px;
+  top: 3px;
+  background: #1d8cc2;
+  line-height: 34px;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 40px;
+}
+.widget.widget-icon-box.red h4 {
+  color: #dd4b37;
+}
+.widget.widget-icon-box.red i {
+  background: #dd4b37;
+}
+.widget.widget-icon-box.blue h4 {
+  color: #1d8cc2;
+}
+.widget.widget-icon-box.blue i {
+  background: #1d8cc2;
+}
+.widget.widget-icon-box.green h4 {
+  color: #78ba37;
+}
+.widget.widget-icon-box.green i {
+  background: #78ba37;
+}
+.widget.widget-icon-box.yellow h4 {
+  color: #dbd134;
+}
+.widget.widget-icon-box.yellow i {
+  background: #dbd134;
+}
+.widget.widget-icon-box.purple h4 {
+  color: #ba55db;
+}
+.widget.widget-icon-box.purple i {
+  background: #ba55db;
+}
+.widget.widget-icon-box.pink h4 {
+  color: #e962a1;
+}
+.widget.widget-icon-box.pink i {
+  background: #e962a1;
+}
+.widget.widget-icon-box.grey h4 {
+  color: #676869;
+}
+.widget.widget-icon-box.grey i {
+  background: #676869;
+}
+.widget.icon i {
+  left: 10px;
+  top: 5px;
+  color: #1d8cc2;
+  font-size: 24px;
+}
+.widget.icon.red h4 {
+  color: #dd4b37;
+}
+.widget.icon.red i {
+  color: #dd4b37;
+}
+.widget.icon.blue h4 {
+  color: #1d8cc2;
+}
+.widget.icon.blue i {
+  color: #1d8cc2;
+}
+.widget.icon.green h4 {
+  color: #78ba37;
+}
+.widget.icon.green i {
+  color: #78ba37;
+}
+.widget.icon.yellow h4 {
+  color: #dbd134;
+}
+.widget.icon.yellow i {
+  color: #dbd134;
+}
+.widget.icon.purple h4 {
+  color: #ba55db;
+}
+.widget.icon.purple i {
+  color: #ba55db;
+}
+.widget.icon.pink h4 {
+  color: #e962a1;
+}
+.widget.icon.pink i {
+  color: #e962a1;
+}
+.widget.icon.grey h4 {
+  color: #676869;
+}
+.widget.icon.grey i {
+  color: #676869;
+}
+.widget.call-to-action .btn-cta {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-family: 'Quicksand';
+}
+.widget.call-to-action p {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Quicksand';
+  line-height: 1.1;
+  margin-top: 8px;
+}
+.widget.call-to-action.center {
+  text-align: center;
+}
+#wp-calendar {
+  margin: 0;
+  width: 100%;
+  font-size: 13px;
+  font-size: 0.928571429rem;
+  line-height: 1.846153846;
+  color: #686868;
+}
+#wp-calendar caption {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+#wp-calendar th,
+#wp-calendar td {
+  text-align: left;
+}
+#wp-calendar #next {
+  padding-right: 24px;
+  padding-right: 1.714285714rem;
+  text-align: right;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  background: #314048;
+}
+footer section.bottom {
+  padding: 0 0 30px 0;
+}
+footer section.bottom p.copyright {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+footer section.content h1,
+footer section.content h2,
+footer section.content h3,
+footer section.content h4,
+footer section.content h5,
+footer section.content h6 {
+  color: #b7e0f4;
+  letter-spacing: 1px;
+}
+footer section.content p,
+footer section.content li,
+footer section.content address,
+footer section.content a {
+  color: #b3bfc5;
+  font-weight: 500;
+}
+footer section.content address {
+  margin-bottom: 8px;
+}
+footer section.content li {
+  margin: 5px 0;
+}
+footer section.content a {
+  color: #edf0f1;
+}
+footer section.content a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer section.content .widget h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+footer section.content .widget #wp-calendar td,
+footer section.content .widget #wp-calendar tr {
+  color: #b3bfc5;
+}
+footer section.content .widget #wp-calendar caption {
+  color: #b7e0f4;
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  section.portfolio #portfolio-filter {
+    margin-left: 20px !important;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    padding: 0px;
+  }
+  header nav.menu {
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+  }
+  header nav.menu select {
+    display: block !important;
+    width: 100%;
+    font-size: 16px;
+  }
+  header nav.menu ul {
+    display: none;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  section.hero {
+    height: 340px;
+  }
+  section.call-to-action {
+    text-align: center;
+  }
+  section.call-to-action .btn {
+    display: block;
+    width: auto;
+    margin: 20px 30px 0;
+  }
+  section.features .widget {
+    margin-bottom: 40px;
+  }
+  section.features .widget:last-child {
+    margin-bottom: 0px;
+  }
+  section.features .widget p {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  section.portfolio #portfolio-filter {
+    margin-left: 0px !important;
+  }
+  section.portfolio .portfolio_item {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+  }
+  footer .widget {
+    text-align: center;
+  }
+  footer .widget h4 {
+    margin-top: 30px;
+  }
+  footer .widget:first-child h4 {
+    margin-top: 0px;
+  }
+  footer .widget p {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  section.hero {
+    display: none;
+  }
+}
+
+
+/* ---- iphone image ---- */
+.iphone{
+    margin-left:20px;
+    width:380px;
+    height:750px;
+    background-image: url('../images/iphone1.png');
+    position:absolute;
+    float:left;
+    z-index: 2;
+}
+.iphone_img{
+    position:absolute;
+    left:45px;
+    top:120px;
+    width:283px;
+    height:505px;
+    overflow:hidden;
+}
+.iphone_img img{
+    position:absolute;
+    left:283px;
+    width: 284px;
+}
