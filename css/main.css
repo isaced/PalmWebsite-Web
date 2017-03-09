@@ -558,3 +558,10 @@ footer section.content .widget #wp-calendar caption {
     left:283px;
     width: 284px;
 }
+
+
+.contact-link {
+  font-size: 30px; 
+  margin-top: 10px;
+  margin-right: 20px;
+}
